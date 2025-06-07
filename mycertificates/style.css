@@ -1,0 +1,69 @@
+.certificate-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.certificate-item {
+    text-align: center;
+    width: 150px;
+    /* Adjust width as needed */
+}
+
+.certificate-icon {
+    width: 80px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.certificate-icon:hover {
+    transform: scale(1.1);
+}
+
+.custom-outline {
+    background-color: #FFFFFF !important;
+    /* border: 1px solid #E5E5EA; */
+    border-radius: 8px !important;
+    color: black !important;
+    font-size: 14px;
+    border: 1px solid var(--Grays-Gray-5, #E5E5EA) !important;
+
+    padding: 14px 20px 14px 20px !important;
+    /* position: absolute; */
+    margin-left: -140px !important;
+
+
+}
+
+.block_mycertificates table th,
+.block_mycertificates table td {
+    width: 509px;
+    vertical-align: middle;
+}
+
+.block_mycertificates table th {
+    height: 52px;
+}
+
+.block_mycertificates table td {
+    height: 64px;
+}
+
+
+.theadbg {
+    background-color: #F1F4F9 !important;
+
+    border: 1px solid #F1F5F7 !important;
+}
+
+table thead tr th {
+
+    color: #8E8E93 !important;
+
+}
+
+.dbutton {
+    background-color: #EDE6FD !important;
+    color: #811AFF !important;
+    border: none !important;
+}

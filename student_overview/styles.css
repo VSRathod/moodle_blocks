@@ -1,0 +1,21 @@
+
+.block_student_overview .student-overview{
+    margin-top: 1rem;;
+}
+.text-primary-xp{
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    margin-bottom: 10px;
+}
+
+.text-second-xp{
+    font-family: Helvetica;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+   
+}
+

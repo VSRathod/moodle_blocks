@@ -1,0 +1,19 @@
+<div class="block-learningtime" data-userid="{{userid}}">
+   
+    <div class="time-period-selector mb-3">
+        <span class="mr-2">{{str_timeperiod}}</span>
+        <div class="time-range-selector">
+            <button class="time-range-btn active" data-range="today">{{str_today}}</button>
+            <button class="time-range-btn" data-range="last7days">{{str_last7days}}</button>
+            <button class="time-range-btn" data-range="last30days">{{str_last30days}}</button>
+            <button class="time-range-btn" data-range="last6months">{{str_last6months}}</button>
+            <button class="time-range-btn" data-range="currentyear">{{str_currentyear}}</button>
+        </div>
+    </div>
+    
+    <div class="chart-container">
+        <div class="loading-message">{{str_loading}}</div>
+    </div>
+    
+    <div class="stats-container"></div>
+</div>

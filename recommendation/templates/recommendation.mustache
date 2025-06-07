@@ -1,0 +1,81 @@
+{{!
+    This file is part of Moodle - http://moodle.org/
+
+    Moodle is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Moodle is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+}}
+
+{{!
+    @template block_recommendation/recommendation
+
+    This template renders course recommendations.
+
+    Context variables required:
+    * recommendations: array of recommended courses, each having:
+        - image: string
+        - url: string
+        - name: string
+        - len_style: string (optional)
+        - categories: array of categories (each with id, name)
+        - id: course ID (optional if rating section used)
+        - courseid: course ID (optional if rating section used)
+        - rating: numeric (optional if rating section used)
+        - fastar: array of stars (optional if rating section used)
+}}
+
+<div class="text-center mt-n5">
+    <div class="row mx-auto my-auto">
+        <div class="w-100">
+            <div class="pt-5 pb-0">
+                <div class="row row_slider recommend_slider mx-2">
+                    {{#recommendations}}
+                        <div class="card recommand_card p-1">
+                            <img src="{{image}}" class="card-img-top" alt="Course image">
+
+                            <div class="card-body p-1">
+                                <div class="d-flex justify-content-start mb-1">
+                                    {{#categories}}
+                                        <a class="cate" href="{{{config.wwwroot}}}/course/index.php?categoryid={{id}}">{{name}}</a>
+                                        
+                                    {{/categories}}
+                                </div>
+
+                                
+
+                                <a href="{{url}}" class="mb-1">
+                                    <h5 class="course_name" style="{{len_style}}">{{{name}}}</h5>
+                                </a>
+                                <div class="d-flex">
+                                <span class='modulecnt'>{{module}} Modules</span><span>
+                                          
+                                    <div class="rating-stars">
+                                        {{#stars}}
+                                        {{#filled}}
+                                            <i class="fa fa-star" style="color: gold;"></i>
+                                        {{/filled}}
+                                        {{^filled}}
+                                            <i class="fa fa-star-o" style="color: gold;"></i>
+                                        {{/filled}}
+                                        {{/stars}}
+                                    </div>
+                                </span></div>
+
+                                <a href="{{url}}" class="btn btn-enroll">Enroll Now</a>
+                            </div>
+                        </div>
+                    {{/recommendations}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

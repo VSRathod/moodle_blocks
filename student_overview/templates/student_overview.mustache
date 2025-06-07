@@ -1,0 +1,184 @@
+<div class="d-flex justify-content-end pr-2">
+  <a href="{{config.wwwroot}}/user/profile.php?id={{userid}}" class="text-decoration-none">
+    <button type="button" class="custom-outline m-1 p-2 rounded20">
+      <i class="bi bi-arrow-up-right text-info"></i> View Profile
+    </button>
+  </a>
+</div>
+
+
+
+<div class="student-overview">
+   <div class="row "> 
+   
+        {{! <div class="col-xl-6 col-lg-6 col-12 left-side-section">
+            <h3 class="box-title mb-20 fw-500">Today's course</h3>
+            {{#courses}}
+{{! <div class="box-body bg-primary-light mb-3 col-xxl-6 col-xl-12 col-lg-6 col-md-6 pull-up">
+    <div class="d-flex align-items-center ps-xl-20">
+        <!-- Progress Circle -->
+        <div class="me-20">
+            <svg class="circle-chart" viewBox="0 0 33.83 33.83" width="80" height="80">
+                <circle class="circle-chart__background" stroke="#efefef" stroke-width="2"
+                    cx="16.915" cy="16.915" r="15.915" fill="url(#img)"></circle>
+                <circle class="circle-chart__circle" stroke="#ddd" stroke-width="2"
+                  stroke-dasharray="{{progress}}   {{!, 100" stroke-linecap="round" fill="none"
+                    cx="16.915" cy="16.915" r="15.915"></circle>
+                <text x="50%" y="50%" text-anchor="middle" dy="0.3em" font-size="8" fill="#6AC577">
+                    {{progress}}                        
+                  {{!  %
+                </text>
+            </svg>
+        </div>
+
+        <!-- Course Details -->
+        <div class="d-flex flex-column w-75 course-lesson">
+            <a href="#" class="text-dark hover-primary fw-600">{{title}}</a>
+            {{!<div class="row align-items-center">
+                <div class="col-xl-12 col-md-6 text-fade lesson">
+                    <p class="my-10"><i class="fa-solid fa-book-open"></i> {{lessons}} 
+                    {{!lessons</p>
+                    <p><i class="fa-solid fa-book"></i> {{assignments}}
+                    {{! assignments</p>
+                </div>
+                <div class="col-xl-12 col-md-6 text-fade lesson">
+                    <p class="my-10"><i class="fa-solid fa-clock"></i> {{duration}}
+                    {{!</p>
+                    <p><i class="fa-solid fa-person"></i> {{students}} 
+                    {{!students</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Continue Button -->
+    <div class="d-flex justify-content-between mx-lg-10 mt-10">
+        <div class="text-center">
+            <a href="{{url}}
+            {{!" class="waves-effect waves-light btn bg-green px-25 py-8">Continue</a>
+        </div>
+    </div>
+</div>
+{{/courses}} 
+
+       
+   
+        
+           
+                
+                    <div class="col-xxl-12 col-xl-12 col-lg-12" style="">
+                       
+                            <div class="box-body  pb-0">    
+                                <div class="">
+                                    <div style="justify-items: center;" >
+                                        <div class="bg-white px-10 text-center pt-15 w-140 ms-20 mb-0 rounded-circle mb-20">
+                                            <a href="#" class="w-100">
+                                                <img class="avatar avatar-size rounded-circle bg-light img-fluid" src="{{user_photo}}" alt="">
+                                            </a>    
+                                        </div>
+                                        <div class="mt-2 mb-2">
+                                            <h5 class="my-10 mb-0 fw-500 fs-18"><a class="text-dark" href="#">{{user_name}}</a></h5>
+                                            {{! <span class="text-fade mt-5"><i class="fa fa-map-marker" aria-hidden="true"></i> Surakarta, INA</span>}}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>    
+                            
+                                <div class="  ">
+                                    <div class="d-flex align-items-center mt-4">
+                                        <div class="me-10 me-sm-20  w-50">
+                                            {{!<div class="w-p100 l-h-90">
+                                                <img src="../blocks/student_overview/pix/award-prize-svgrepo-com.svg" alt="" class="align-self-end w-75">
+                                            </div>}}
+                                            
+                                        <div class="d-flex flex-column align-items-center  fw-600 -200">
+                                            <h1 class="text-primary hover-primary text-primary-xp ">{{xp_points}}</h1>
+                                            <h5 class="fw-300 text-second-xp">XP Point</h5>
+                                        </div>
+                                         </div>
+                                        <div class="me-10 me-sm-20  w-50">
+                                            {{!<div class="w-p100 l-h-90">
+                                                <img src="../blocks/student_overview/pix/ranking.svg" alt="" class="align-self-end w-75">
+                                            </div>}}
+                                        
+                                        <div class="d-flex flex-column align-items-center fw-600 w-100">
+                                            <h1 class="text-primary hover-primary text-primary-xp ">2nd</h1>
+                                            <h5 class="fw-300 text-second-xp">Ranking</h5>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>                
+                            
+                        
+                    </div>
+                    
+                    {{!<div class="row">
+                        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 px-xxl-12 pt-xxl-10 ps-xxl-20">
+                            <div class="box pull-up">
+                                <div class="box-body p-2 bg-pink" style="height: 16rem;">
+                                    <h4 class="font-light fw-500 ml-3">My Progress</h4>
+                                    <div class="chart-container">
+                                        <canvas id="overallProgressChart" style="height:200px !important;"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>}}
+                    
+                   {{! <div class="col-xl-12 col-xl-12 mt-xxl-20">
+                        <div class="boxbody mb-0">
+                            <div class="row">
+                                <label for="timePeriod">Select Time Period:</label>
+                                <select id="timePeriod">
+                                    <option value="current_week">Current Week (Day-wise)</option>
+                                    <option value="last_week">Last Week (Day-wise)</option>
+                                    <option value="current_month">Current Month (Week-wise)</option>
+                                    <option value="last_month">Last Month (Week-wise)</option>
+                                    <option value="current_year">Current Year (Month-wise)</option>
+                                </select>
+                            </div>
+                                
+                            <div class="row">
+                                <div class="col-xl-12 col-sm-12">
+                                    <div id="learning-time-chart">
+                                        <canvas id="learningTimeChart" height="100px"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>}}
+                
+            
+        
+    </div>            
+</div>
+{{#js}}
+require(['block_student_overview/student_overview','jquery', 'core/chartjs'], function(StudentOverview, $, Chart) {
+    StudentOverview.init();
+    var chartData = {
+        labels: JSON.parse('{{{ overallProgress.labels }}}'), // Parse JSON-encoded labels
+        datasets: [{
+            label: 'Overall Progress',
+            data: JSON.parse('{{{ overallProgress.data }}}'), // Parse JSON-encoded data
+            backgroundColor: ['#36a2eb', '#ff6384'],
+        }]
+    };
+
+    // Debugging
+    console.log('Chart Data:', chartData);
+
+    // Render the chart
+    var ctx = document.getElementById('overallProgressChart').getContext('2d');
+    new Chart(ctx, {
+        type: 'pie',
+        data: chartData,
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+        }
+    });
+
+
+
+});
+{{/js}}

@@ -1,0 +1,13 @@
+<div class="leaderboard-container">
+    {{#users}}
+    <div class="user-bar user-rank-{{rank}}">
+    <div class="bottom-label">{{fullname}}<br>{{points}} XP</div>
+        <div class="bar" style="height: {{height}}px;"></div>
+        <div class="top-label">
+            <img src="{{picture}}" alt="img" class="profile-pic"/>
+                 
+        </div>
+        <div class="rank-label">{{rank}}</div>
+    </div>
+    {{/users}}
+</div>

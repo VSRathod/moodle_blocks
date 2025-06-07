@@ -1,0 +1,44 @@
+<div class="">
+    <!-- View Certificate button -->
+    <div class="d-flex justify-content-end all-btn">
+        <form action="{{config.wwwroot}}/local/external_certificate/" method="get">
+            <button type="submit" class="btn custom-outline p-1 rounded-3">
+                <i class="bi bi-arrow-up-right"></i> {{#str}} viewcertificate, block_mycertificates {{/str}}
+            </button>
+        </form>
+    </div>
+
+    <!-- Table for Certificates -->
+    <div class="card-body p-0 h-100">
+        <table class="table  mt-4">
+            <thead class="theadbg rounded-3">
+                <tr>
+                    <th>{{#str}} certificatename, block_mycertificates {{/str}}</th>
+                    <th>{{#str}} issuedate, block_mycertificates {{/str}}</th>
+                    <th>{{#str}} action, block_mycertificates {{/str}}</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#externalcertificates}}
+                    <tr>
+                        <td>{{name}}</td>
+                        <td>{{issued_date}}</td>
+                        <td>
+                            <a href="{{download_url}}" class="btn btn-sm dbutton" target="_blank">
+                                <i class="bi bi-file-earmark-arrow-down"></i></i> {{#str}} download, block_mycertificates {{/str}}
+                            </a>
+                        </td>
+                    </tr>
+                {{/externalcertificates}}
+
+                {{^externalcertificates}}
+                    <tr>
+                        <td colspan="3" class="text-center text-muted">
+                            {{#str}} nohavecertificates, block_mycertificates {{/str}}
+                        </td>
+                    </tr>
+                {{/externalcertificates}}
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,42 @@
+<form id="map-courses-form" method="post" action="{{config.wwwroot}}/blocks/recommendation/save_mapping.php">
+    <input type="hidden" name="sesskey" value="{{sesskey}}">
+    <div id="map-message" class="alert" style="display: none;"></div>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Available Course</th>
+                <th>Mapped Courses</th>
+                <th>Action</th>
+            </tr>
+        </thead>    
+        <tbody id="mapping-rows">
+            {{#mappings}}
+            <tr class="mapping-row">
+                <td>
+                    <select name="courseid[{{index}}]" class="form-control course-dropdown">
+                        <option value="">Select a course...</option>
+                        {{#all_courses}}
+                            <option value="{{id}}" {{#selected}}selected{{/selected}}>{{name}}</option>
+                        {{/all_courses}}
+                    </select>
+                </td>
+                <td>
+                    <select name="mapcourse[{{index}}][]" class="form-control select2 map-dropdown" multiple>
+                        {{#all_courses}}
+                            <option value="{{id}}" {{#mapped}}selected{{/mapped}}>{{name}}</option>
+                        {{/all_courses}}
+                    </select>
+                </td>
+                <td>
+                    <button type="button" class="btn btn-danger remove-row">
+                        <i class="fa fa-trash"></i> Remove
+                    </button>
+                </td>
+            </tr>
+            {{/mappings}}
+        </tbody>
+    </table>
+
+    <button type="button" class="btn btn-success float-right" id="add-map">Add New Mapping</button>
+    <button type="submit" class="btn btn-primary">Save Mapping</button>
+</form>

@@ -1,0 +1,16 @@
+<XMLDB xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" PATH="blocks/recommendation/db" VERSION="2025040400" COMMENT="XMLDB file for Moodle block/recommendation" xsi:noNamespaceSchemaLocation="../../../lib/xmldb/xmldb.xsd">
+    <TABLES>
+        <TABLE NAME="block_courserecommend_map" COMMENT="Stores course mapping data">
+           <FIELDS>
+                <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+                <FIELD NAME="courseid" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0"/>
+                <FIELD NAME="mapcourse" TYPE="text" NOTNULL="false"/>
+                <FIELD NAME="mapdate" TYPE="int" LENGTH="10" NOTNULL="true"/>
+                <FIELD NAME="mapby" TYPE="int" LENGTH="10" NOTNULL="true"/>
+            </FIELDS>
+            <KEYS>
+                <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+            </KEYS>
+        </TABLE>
+    </TABLES>
+</XMLDB>

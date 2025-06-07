@@ -1,0 +1,195 @@
+/* ======================
+   Card Container & Styling
+====================== */
+.block_recommendation .card {
+    border: 1px solid #E4E7EC !important;
+    width: 212px !important;
+    height: 294px;
+    border-radius: 8px;
+    background-color: #ffffff !important;
+}
+
+.block_recommendation .recommand_card:hover {
+    box-shadow: 0px 1px 8px 0 rgba(45, 111, 188, 0.23) !important;
+}
+
+/* ======================
+   Card Image
+====================== */
+.block_recommendation .card-img-top {
+    object-fit: cover !important;
+    width: 207px;
+    height: 138px  !important;
+    border-radius: 8px;
+}
+
+.block_recommendation .modulecnt{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0px;
+    text-align: left;
+    
+}
+
+.block_recommendation .rating-stars{
+    width: 90px !important;
+    min-width: 120px !important;
+}
+.block_recommendation .rating-stars i{
+    width: 12px !important;
+    font-size: 14px !important;
+    text-align: right !important;
+}
+/* ======================
+   Slick Carousel Padding
+====================== */
+.block_recommendation .slick-initialized .slick-slide {
+    padding: 0 7.5px;
+}
+
+#page-site-index .slick-slider {
+    padding: 0 15px 0 15px !important;
+}
+
+/* ======================
+   Slick Navigation Arrows
+====================== */
+#page-site-index .slick-prev {
+    left: -21px !important;
+}
+
+#page-site-index .slick-next {
+    right: 4px !important;
+}
+
+#page-site-index .slick-prev::before,
+#page-site-index .slick-next::before {
+    font-size: 25px !important;
+}
+
+/* ======================
+   Text Content
+====================== */
+
+
+.block_recommendation .course_des {
+    font-size: 12px;
+    color: #a9abb8;
+    text-align: left;
+    margin: 0;
+}
+
+/* ======================
+   Badge Styling
+====================== */
+.block_recommendation .cate {
+    width: 96px;
+    height: 21px;
+    border-radius: 12px;
+    background: #D0EFFC;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
+}
+
+/* ======================
+   Enroll Button
+====================== */
+.block_recommendation .btn-enroll {
+    background-color: #811AFF !important;
+    color: #fff !important;
+    padding: 10px !important;
+    border-radius: 8px !important;
+    border: none !important;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* ======================
+   Rating Stars
+====================== */
+.block_recommendation .rating_star,
+.block_recommendation .course_rating_list li i {
+    color: #f2b01e;
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+.block_recommendation .course_rating_list {
+    padding: 0;
+    margin: 10px 0;
+    list-style: none;
+}
+
+.block_recommendation .course_rating_list li {
+    display: inline-block;
+    cursor: pointer;
+    color: #f0f0f0;
+    text-shadow: 0 0 1px #000;
+}
+
+.block_recommendation .course_rating_list li.selected {
+    color: #f4b30a !important;
+    text-shadow: 0 0 1px #f48f0a !important;
+}
+
+/* ======================
+   Line Clamp for Name & Description
+====================== */
+.block_recommendation h5.course_name,
+.block_recommendation p.course_des {
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-bottom: 2px;
+
+    
+}
+
+/* ======================
+   Media Queries
+====================== */
+@media (width: 1280px) {
+    .block_recommendation .card {
+        width: 210px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .block_recommendation .card {
+        width: 200px;
+    }
+    #page-site-index .slick-prev,
+    #page-site-index .slick-next {
+        left: 0 !important;
+        right: 0 !important;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 576px) {
+    #page-site-index .slick-prev,
+    #page-site-index .slick-next {
+        left: 0 !important;
+        right: 0 !important;
+    }
+}
+
+/* Grid Settings */
+.block_recommendation .card-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-left: 8px !important;
+}
+
+.block_recommendation .card-grid .col {
+    flex: 1 0 30%;
+    display: flex;
+}

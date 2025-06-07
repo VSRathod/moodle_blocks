@@ -1,0 +1,185 @@
+{{=<% %>=}}
+
+<style>
+    .levelbackground{
+      background:url('data:image/png;base64,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');
+      background-repeat: no-repeat;
+      background-size: 35px 35px;
+      width:35px;
+      height:35px;
+      padding-top:10px;
+    }
+    .accordion {
+        background-color: #eee;
+        color: #444;
+        cursor: pointer;
+        padding: 10px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+        transition: 0.4s;
+      }
+
+      .active, .accordion:hover {
+        background-color: #ccc;
+      }
+
+      .accordion:after {
+        content: '\002B';
+        color: #777;
+        font-weight: bold;
+        float: right;
+        margin-left: 5px;
+      }
+
+      .active:after {
+        content: "\2212";
+      }
+
+      .panel {
+        padding: 0 18px;
+        background-color: white;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+      }
+
+    .card-title {
+        width: 100%;
+        height: 35px;
+        display: block!important;
+        border-left: 10px solid #f28a3c;
+        border-right: 40px solid #f28a3c;
+        background: #e3e2e2;
+        padding-top: 7px;
+        padding-left: 10px;
+        font-size: 15px;
+        color: #000;
+        margin-top:0px !important;
+    }
+    
+    .card-text{
+        width:100%; 
+        min-height:150px; 
+        background:white; 
+        padding:0px;
+        margin-top: -10px;
+    }
+    .card-body{
+        position: relative;
+
+    }
+    .expand-collapse-button{
+        font-size:25px;
+        color:white;
+        position:absolute;
+        top:0px; 
+        right:0px;
+        display:block;
+        padding:0 10px;
+        width:40px;
+        height:40px;
+        text-align:center;
+        cursor:pointer;
+    }
+    #leaderboard{
+/*
+        border-left: 2px solid #f28a3c;
+        border-bottom: 2px solid #f28a3c;
+        border-right: 2px solid #f28a3c;
+*/
+    }
+
+.profilecard{
+    background: #f3f8fb;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
+    position:relative;
+    width:80%;
+    min-height:125px;
+}
+.ranknum{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: #f9ca47;
+    padding: 2px 7px;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+ 
+</style>
+
+<!-- <ion-card id="{{CONTENT_OTHERDATA.block_id}}" class="card"> -->
+    <div class="card-body p-3">
+            <h5 class="card-title1" style="padding-left:15px;color:green;">Leader Board</h5>
+  <!--          <div class="expand-collapse-button" (click)="showHideBlock(this)">-</div> -->
+        <br>    
+	<div class=" content block_content">
+                
+            <table><tr>  
+		<td style="width:33%; text-align:center"><div class="profilecard">
+			<ion-icon name="person" style="font-size:50px; color:green"></ion-icon><br>
+			<span>{{CONTENT_OTHERDATA.content[0].firstname}} {{CONTENT_OTHERDATA.content[0].lastname}}</span>
+			<div class="ranknum">1</div>	
+		</div></td> 
+	   
+		<td style="width:33%; text-align:center"><div class="profilecard">
+                        <ion-icon name="person" style="font-size:50px; color:green"></ion-icon><br>
+                       <!--  <span>Kishor Kumar</span> -->
+			<span>{{CONTENT_OTHERDATA.content[1].firstname}} {{CONTENT_OTHERDATA.content[1].lastname}}</span>	
+                        <div class="ranknum">2</div>
+                </div></td>
+
+		<td style="width:33%; text-align:center"><div class="profilecard">
+                        <ion-icon name="person" style="font-size:50px; color:green"></ion-icon><br>
+                       <!--  <span>Kishor Kumar</span> -->
+			<span>{{CONTENT_OTHERDATA.content[2].firstname}} {{CONTENT_OTHERDATA.content[2].lastname}}</span>
+                        <div class="ranknum">3</div>
+                </div></td>
+
+ 
+	    </tr></table>
+		<br>
+            <div>
+                  <table style="width:100%">
+                    <thead style="border-bottom: 1px solid #e3e2e2; padding:5px; background:green; color:white">
+                      <tr>
+                        <th style="width:15%; padding:10px; border-bottom:1px solid #FFF;">Rank<div class="commands"></div></th>
+          <!--              <th style="width:15%">Level<div class="commands"></div></th> -->
+                        <th style="width:50%; border-bottom:1px solid #FFF;">Participant<div class="commands"></div></th>
+          <!--              <th style="width:20%">Total<div class="commands"></div></th> -->
+                      </tr>
+                    </thead>
+                    <tbody>
+
+
+                    <tr *ngFor="let row of CONTENT_OTHERDATA.content|slice:3; let i = index" style="border-bottom:1px solid #FFF" >
+                      <td align="center" style="padding:5px">{{i+4}}</td>
+              <!--        <td align="center"><div class="levelbackground">{{row.lvl}}</div></td> -->
+                      <td align="center" style="padding:5px">{{row.firstname}} {{row.lastname}}</td>
+              <!--       <td align="center" style="padding:5px">{{row.xp}}</td> -->
+                    </tr>
+
+
+
+                    </tbody>
+                  </table>
+            </div>
+
+
+
+
+            </div>
+        </div>
+<!-- </ion-card> -->
+<span style="display: none;">
+    <!-- This is a workaround for MOBILE-2692 to make sure the javascript is re-run after each refresh. -->
+    <% timestamp %>
+</span>
+
+

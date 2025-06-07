@@ -1,0 +1,148 @@
+/* Your CSS with enhancements */
+.leaderboard-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 150px;
+    height: 200px;
+    gap: 20px;
+}
+
+.leaderboard-container .user-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 108px;
+    transition: all 0.5s ease;
+}
+
+.leaderboard-container .user-bar .bar {
+    width: 120px;
+
+    transition: height 0.5s ease;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.leaderboard-container .user-bar .top-label {
+    position: absolute;
+    top: 77px;
+    text-align: center;
+}
+
+.leaderboard-container .bottom-label {
+    margin-bottom: 50px;
+    font-family: Rubik;
+    font-weight: 500 !important;
+    font-size: 16px !important;
+    letter-spacing: 0%;
+
+}
+
+.leaderboard-container .profile-pic {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+}
+
+.leaderboard-container .rank-label {
+    font-weight: 500;
+    color: white;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -35px auto 0;
+    background-color: none;
+}
+
+
+
+.user-name {
+    color: #333;
+}
+
+.xp-amount {
+    color: #666;
+}
+
+/* Bar colors */
+.leaderboard-container .user-rank-1 .bar {
+    background: linear-gradient(180deg, #811AFF 0%, #DBCEFA 70.33%);
+    box-shadow:
+        rgba(219, 205, 250, 1) 0px -5px,
+        rgba(219, 205, 250, 1) 0px -10px,
+        rgba(219, 205, 250, 1) 0px -15px,
+        rgba(219, 205, 250, 1) 0px -20px,
+        rgba(219, 205, 250, 1) 0px -25px;
+}
+
+
+
+
+.leaderboard-container .user-rank-2 .bar {
+    background: #FAC1B7;
+    box-shadow:
+        rgba(248, 163, 146, 1) 0px -5px,
+        rgba(248, 163, 146, 1) 0px -10px,
+        rgba(248, 163, 146, 1) 0px -15px,
+        rgba(248, 163, 146, 1) 0px -20px,
+        rgba(248, 163, 146, 1) 0px -25px;
+}
+
+
+
+.leaderboard-container .user-rank-3 .bar {
+    background: #E5E5EA;
+    box-shadow:
+        rgba(199, 199, 204, 1) 0px -5px,
+        rgba(199, 199, 204, 1) 0px -10px,
+        rgba(199, 199, 204, 1) 0px -15px,
+        rgba(199, 199, 204, 1) 0px -20px,
+        rgba(199, 199, 204, 1) 0px -25px;
+
+}
+
+
+
+/* Current user highlight */
+.current-user .user-name {
+    color: #811AFF;
+
+}
+
+/* Animation classes */
+.rank-up {
+    animation: rankUp 0.5s ease;
+}
+
+.rank-down {
+    animation: rankDown 0.5s ease;
+}
+
+@keyframes rankUp {
+    0% {
+        transform: translateY(20px);
+        opacity: 0.7;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes rankDown {
+    0% {
+        transform: translateY(-20px);
+        opacity: 0.7;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
